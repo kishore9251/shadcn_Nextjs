@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn("min-h-screen w-full bg-white text-black flex",inter.className,{
           "debug-screens": process.env.NODE_ENV === "development",
